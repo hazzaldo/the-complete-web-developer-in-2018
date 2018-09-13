@@ -5,31 +5,38 @@
 </head>
 <body>
 	<h1>Register</h1>
-	<form>
-		First Name: <input type="text" name="firstname"><br>
-		Last Name: <input type="text" name="lastname"><br>
-		Email: <input type="email" name="email" required><br>
-		Password: <input type="password" name="password" minlength="8"><br>
-		Birthday: <input type="date" name="birthday"><br>
-		Gender: <br> 
-		<input type="radio" name="gender" value="Male">Male<br>
-		<input type="radio" name="gender" value="Female">Female<br>
-		<input type="radio" name="gender" value="Others">Other<br>
-		Pets: <br>
-		<input type="checkbox" name="cat"> Cat<br>
-		<input type="checkbox" name="dog"> Dog<br>
-		Cars: <br>
-		<select name="cars">
-			<option value="Volvo" name="volvo" value="volvo">Volvo</option>
-			<option value="Audi" name="audi" value="volvo">Audi</option>
-		</select><br>
-		Non dropdown car selection: <br>
-		<select multiple name="multiple cars">
-			<option value="Honda" value="honda">Honda</option>
-			<option value="Ford" value="ford">Ford</option>
-		</select><br>
-		<input type="submit" value="Register!">
-		<input type="reset">
-	</form>
+	<!-- span tag is the same as div tag except span is an inline element. So it's different to a div, because we can add it to a specific line, for example wrap it around a <p> paragraph line, or even just a word or character. And then we can target CSS styling to that particular span. -->
+	<span></span>
+	<!-- div is a powerfull tag. It divides our content up into containers. Together with CSS it allows us to add styles and divide up the content into containers/sections. So that each section has its own box with targetted CSS styles to it. -->
+	<div>
+		<form>
+			<!-- we use name attribute so that when we submit form data this data gets attached to the end of the URL after question mark symbol as the query data to be submitted in a post request. We need the "name" attribute in order to label the values with respective keys. In the case of the "firstname" field, the value filled in the field will be lablled with its key specified in "name" attribute which "firstname" key. Note by default "form" html tag uses GET method, which is why all the values submitted in the form will show up attached in the URL. This is clearly a security issue, hence we will need to change this to POST request, so the data gets attached in the body of the request rather than the URL. We will do this in future lessons.-->
+			First Name: <input type="text" name="firstname"><br>
+			Last Name: <input type="text" name="lastname"><br>
+			Email: <input type="email" name="email" required><br>
+			Password: <input type="password" name="password" minlength="8"><br>
+			Birthday: <input type="date" name="birthday"><br>
+			Gender: <br> 
+			<input type="radio" name="gender" value="Male">Male<br>
+			<input type="radio" name="gender" value="Female">Female<br>
+			<input type="radio" name="gender" value="Others">Other<br>
+			Pets: <br>
+			<input type="checkbox" name="cat"> Cat<br>
+			<input type="checkbox" name="dog"> Dog<br>
+			<!-- In selection type data we need note we need to specify "name" attribute at the selection tag level. And then at each option we need to specify the "value" attribute. Because it's not a field receiving data, but a selection menu so this is how we can label the data with their keys -->
+			Cars: <br>
+			<select name="cars">
+				<option value="Volvo" name="volvo" value="volvo">Volvo</option>
+				<option value="Audi" name="audi" value="volvo">Audi</option>
+			</select><br>
+			Non dropdown car selection: <br>
+			<select multiple name="multiple cars">
+				<option value="Honda" value="honda">Honda</option>
+				<option value="Ford" value="ford">Ford</option>
+			</select><br>
+			<input type="submit" value="Register!">
+			<input type="reset">
+		</form>
+	</div>
 </body>
 </html>
