@@ -6,27 +6,27 @@
 <body>
 	<h1>Register</h1>
 	<form>
-		First Name: <input type="text"><br>
-		Last Name: <input type="text"><br>
-		Email: <input type="email" required><br>
-		Password: <input type="password" minlength="8"><br>
-		Birthday: <input type="date"><br>
+		First Name: <input type="text" name="firstname"><br>
+		Last Name: <input type="text" name="lastname"><br>
+		Email: <input type="email" name="email" required><br>
+		Password: <input type="password" name="password" minlength="8"><br>
+		Birthday: <input type="date" name="birthday"><br>
 		Gender: <br> 
-		<input type="radio" name="gender">Male<br>
-		<input type="radio" name="gender">Female<br>
-		<input type="radio" name="gender">Other<br>
+		<input type="radio" name="gender" value="Male">Male<br>
+		<input type="radio" name="gender" value="Female">Female<br>
+		<input type="radio" name="gender" value="Others">Other<br>
 		Pets: <br>
-		<input type="checkbox"> Cat<br>
-		<input type="checkbox"> Dogs<br>
+		<input type="checkbox" name="cat"> Cat<br>
+		<input type="checkbox" name="dog"> Dog<br>
 		Cars: <br>
-		<select>
-			<option value="Volvo">Volvo</option>
-			<option value="Audi">Audi</option>
+		<select name="cars">
+			<option value="Volvo" name="volvo" value="volvo">Volvo</option>
+			<option value="Audi" name="audi" value="volvo">Audi</option>
 		</select><br>
 		Non dropdown car selection: <br>
-		<select multiple>
-			<option value="Honda">Honda</option>
-			<option value="Ford">Ford</option>
+		<select multiple name="multiple cars">
+			<option value="Honda" value="honda">Honda</option>
+			<option value="Ford" value="ford">Ford</option>
 		</select><br>
 		<input type="submit" value="Register!">
 		<input type="reset">
