@@ -2,10 +2,39 @@
 	Property: value;
 }*/
 
+/*Apply rules to body in general. Any rules further below will override the rule here.*/
+/*Specifying image as background and also "background-size: cover" means fit the image on page*/
+body {
+	background-image: url(ocean.jpg);
+	background-size: cover;
+}
+
 h2 {
-	color: red;
+	/*use the website http://paletton.com/ to get a custom colour 
+	in this case we used hex format. Ensure hash always proceeds 
+	the number in hex*/
+	color: #993350;
+	text-align: center;
+	/*use the website http://paletton.com/ to get a custom colour 
+	in this case we used rgb format. Ensure the rgb numbers are wrapped
+	by rgb()
+	You can also apply rgba() where the a stands for alpha.
+	By adding the fourth number between 0 - 1 sets the opacity of
+	the color i.e. how opaque or transparent it is*/
+	border: 5px solid rgb(237, 191, 204);
+	/*cursor property allows you to change how the cursor looks, based on the property it hovers over, that you applied this setting to*/
+	/*For example cursor type "pointer" changes from arrow to pointing hand*/
+	cursor: pointer;
 }
 
 p {
-	color: pink;
+	color: green;
+}
+
+/*Here we're specifying that li (i.e. list tags - whether bullet points or numberred) will not apply in the linked html file*/
+li {
+	list-style: none;
+	/*display type "inline-block", allows the list to be lined-up horizantally as opposed to vertically (default setting)*/
+	/*This is useful when you want to line-up a menu across the header of the page for example*/
+	display: inline-block;
 }
