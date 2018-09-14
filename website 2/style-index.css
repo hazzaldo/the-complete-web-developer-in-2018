@@ -71,3 +71,11 @@ will have the id settings applied to them.
 #div2 {
 	background: rgba(255, 0, 0, 0.2);
 }
+
+footer {
+	/*use this to make sure the footer always appears at the bottom even when
+	using float settings with images, e.g. img { foat: left; }. 
+	Otherwise the footer will also wrap to the side of the image*/
+	clear: both;
+	text-align: center;
+}

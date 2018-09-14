@@ -2,7 +2,7 @@ h2 {
 	color: red;
 }
 
-h2, p {
+p {
 	/*use the website http://paletton.com/ to get a custom colour 
 	in this case we used hex format. Ensure hash always proceeds 
 	the number in hex*/
@@ -48,5 +48,20 @@ p {
 	font-family: "Times New Roman", Georgia;
 }
 
+img {
+	/*this makes the image float to left make the next element below the image tag in HTML 
+	wrap around it. In this case we have a "p" tag below the image tag, which will now 
+	wrap around the image to the right of it*/
+	/*it's best you use this with images and not other elements*/
+	float: left;
+}
+
+footer {
+	/*use this to make sure the footer always appears at the bottom even when
+	using float settings with images, as we did in the above "img" element. 
+	Otherwise the footer will also wrap to the side of the image*/
+	clear: both;
+	text-align: center;
+}
 
 
