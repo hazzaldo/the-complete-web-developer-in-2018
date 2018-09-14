@@ -2,6 +2,13 @@
 	Property: value;
 }*/
 
+/* The asterisk applies all its settings to the rest of the CSS selectors/elements below it.
+However if there are CSS selectors/elements settings further below that conflict with the Asterisk properties 
+then the individual selectors'/elements' settings below Asterisk override the Asterisk settings*/
+* {
+	text-align: right;
+}
+
 /*Apply rules to body in general. Any rules further below will override the rule here.*/
 /*Specifying image as background and also "background-size: cover" means fit the image on page*/
 body {
@@ -9,7 +16,9 @@ body {
 	background-size: cover;
 }
 
-h2 {
+/*We can apply the settings to more than one selector in this case 
+h2 and p selectors*/
+h2, p {
 	/*use the website http://paletton.com/ to get a custom colour 
 	in this case we used hex format. Ensure hash always proceeds 
 	the number in hex*/
@@ -37,4 +46,28 @@ li {
 	/*display type "inline-block", allows the list to be lined-up horizantally as opposed to vertically (default setting)*/
 	/*This is useful when you want to line-up a menu across the header of the page for example*/
 	display: inline-block;
+}
+
+/*this is a class, it is proceeded by a dot. In the HTML we apply to different tags this class
+which will apply its settings based on what we defined here in the class. */
+/*Example <p class="webtext">Lorem ipsum</p> . This will apply this class settings to that specific 
+"p" tag. This is a good way of targetting CSS settings for individual tags or elements in html.*/
+.webtext {
+	border: 5px dashed green;
+}
+
+.redtext {
+	color: red;
+}
+
+/*this is an "id". It is defined here in the CSS file. Unlike a class, the name has to be proceeded with a #.
+id is similar to class, except you can only apply it to one element in html. For example
+we can apply it to a div tag, so that all the elements inside the div tag 
+will have the id settings applied to them. 
+*/
+#div1 {
+	background: rgba(0, 0, 255, 0.2);
+}
+#div2 {
+	background: rgba(255, 0, 0, 0.2);
 }
