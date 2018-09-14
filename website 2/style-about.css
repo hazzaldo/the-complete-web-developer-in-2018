@@ -1,3 +1,52 @@
 h2 {
-	color: blue;
+	color: red;
 }
+
+h2, p {
+	/*use the website http://paletton.com/ to get a custom colour 
+	in this case we used hex format. Ensure hash always proceeds 
+	the number in hex*/
+	color: #993350;
+	text-align: center;
+	/*use the website http://paletton.com/ to get a custom colour 
+	in this case we used rgb format. Ensure the rgb numbers are wrapped
+	by rgb()
+	You can also apply rgba() where the a stands for alpha.
+	By adding the fourth number between 0 - 1 sets the opacity of
+	the color i.e. how opaque or transparent it is*/
+	border: 5px solid rgba(237, 191, 204, 0.5);
+	/*cursor property allows you to change how the cursor looks, based on the property it hovers over, that you applied this setting to*/
+	/*For example cursor type "pointer" changes from arrow to pointing hand*/
+	cursor: pointer;
+}
+
+p {
+	/*puts a line strike through the text*/
+	text-decoration: line-through;
+	/*transforms the entire text to uppercase*/
+	text-transform: uppercase;
+	/*specifies how much spacing between each paragraph. The higher the number the more spacing*/
+	line-height: 50px;
+	/*specifies the font style*/
+	font-style: italic;
+	/*how bold the font is. You can specify a figure between 100-900 or you can specify "bold" value*/
+	font-weight: bold;
+	/*size of the font as a percentage of its original size. 100% being its normal size*/
+	font-size: 100%;
+	/*font type. If the font type is multiple words, you have to put it in quotations. E.g. 
+	"Times New Roman"*/
+	/*Putting multiple fonts like the example below, means if the person who's opening the 
+	website on his/her laptop on a specific OS and browser, if they don't have the first specified
+	font type, then use the one after it in the list. You can specify multiple fonts in a list*/
+	/*E.g font-family: "Times New Roman", Georgia;*/
+	/*One way of ensuring a user has the font that you want them to see on the website is by 
+	including a font file within the website files to be referenced. Another easier way is to
+	by using google fonts - https://fonts.google.com/
+	Udemy lecture on how to add a font from Google font to your website 
+	- https://www.udemy.com/the-complete-web-developer-in-2018/learn/v4/t/lecture/8628256?start=0*/
+	/*Below is one example of font imported from Google fonts*/
+	font-family: "Times New Roman", Georgia;
+}
+
+
+
