@@ -1,3 +1,25 @@
 h2 {
 	color: green;
 }
+
+.boxstylelogin {
+	border: 5px solid red;
+	/*displayes all content inline to each other*/
+	display: inline-block;
+	/*add 5px spacing all around (top, right, bottom, left) between the content 
+	and the container border*/
+	/*You also apply different padding spacing to top, right, bottom, left in 
+	that order, like so: padding: 5px 20px 5px 20px; */
+	/*There are available CSS properties as well, like: padding-bottom, padding-left ...etc. */
+	padding: 5px;
+	/*Margin allows us to specify space outside of the border*/
+	/*for specific top, right, bottom, left margins, you can apply the same
+	principles as the padding.*/
+	/*There's one other short hand way of specifying margins
+	if you specify: margin: 0px 20px; This means 0px top and bottom
+	and 20px right and left*/
+	margin: 20px;
+	/*specifies the width and height of the content itself in the container*/
+	width: 33px;
+	height: 55px;
+}
