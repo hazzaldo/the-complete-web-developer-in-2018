@@ -23,3 +23,19 @@ h2 {
 	width: 33px;
 	height: 55px;
 }
+
+p {
+	font-size: 20px;
+}
+
+span {
+	/*this is another way of specifying text size. In this case it is saying this 
+	size is 5 times bigger than the containing element size text i.e. 
+	in this case the size of the other text in the containing "p" tag.
+	It is useful because you can set it relative to the other text in the
+	enclosing container*/
+	/*There's also "rem" property. This means it is relative to the size of
+	the root element. The root element will be the HTML document. So whatever
+	is the default size set for the HTML document it will be relative to that*/
+	font-size: 5em;
+}

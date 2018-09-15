@@ -1,0 +1,40 @@
+
+.container {
+	/*"display: flex;" is how to activate flexbox.*/
+	display: flex;
+	/*flex wrap setting will wrap images to fit in the size of window
+	the user has it sized. Rather than having to scroll across the page*/
+	flex-wrap: wrap;
+	/*display images in a centered position on the page*/
+	justify-content: center;
+}
+
+body {
+	margin: 0px; 
+ }
+
+h1 {
+	font-family: fantasy;
+	font-size: 3em; 
+	border-bottom: 2px solid pink;
+	border-right: 2px solid pink;
+	width:400px;
+	text-align: center;
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px;
+}
+
+img {
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	/*"transition" property is introduced in CSS3. This allows a transition of 1 second to take place based on the action specified.
+	The action in this place is "img:hover" which is defined below. This now means that
+	when user hover over an image, "hover" will scale image by 1.1, but not only that, 
+	this affect will take place over the time span of 1 second.*/
+	transition: all 1s;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
