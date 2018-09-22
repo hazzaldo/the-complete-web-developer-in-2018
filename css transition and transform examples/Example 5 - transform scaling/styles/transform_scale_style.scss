@@ -1,0 +1,29 @@
+.container {
+	margin: 100px;
+}
+
+.wrap {
+	display: inline-block;
+	margin: auto 50px;
+}
+
+.square {
+	background: darkturquoise;
+  	border-radius: 5px;
+  	height: 50px;
+  	margin: 50px auto;
+  	transition: transform 1s;
+  	width: 50px;
+}
+
+.scale {
+	&:hover{ 
+		transform: scale(2);
+	}
+}
+
+.scaleWidthVSHeight {
+	&:hover{ 
+		transform: scale(4, 2);
+	}
+}

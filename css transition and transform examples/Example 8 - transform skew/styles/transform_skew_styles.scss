@@ -1,0 +1,57 @@
+.container {
+	display: inline-block;
+	margin: 50px;
+}
+
+.square {
+  	border-radius: 5px;
+  	height: 70px;
+  	width: 70px;
+  	transition: transform 1s;
+  	margin: auto;
+}
+
+.skewLeft {
+	@extend .square;
+	background: Khaki;
+
+	&:hover {
+		transform: skewX(20deg);
+	}
+}
+
+.skewRight {
+	@extend .square;
+	background: Pink;
+
+	&:hover {
+		transform: skewX(-20deg);
+	}
+}
+
+.skewUp {
+	@extend .square;
+	background: Green;
+
+	&:hover {
+		transform: skewY(-20deg);
+	}
+}
+
+.skewDown {
+	@extend .square;
+	background: Red;
+
+	&:hover {
+		transform: skewY(20deg);
+	}
+}
+
+.skewLeftAndDown {
+	@extend .square;
+	background: maroon;
+
+	&:hover {
+		transform: skew(20deg, 20deg);
+	}
+}

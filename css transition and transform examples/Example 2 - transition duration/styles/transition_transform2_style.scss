@@ -21,17 +21,16 @@ h1 {
 	height: 40px;
 	margin: 50px auto;
 	width: 40px;
-}
 
-.resize:hover {
-	transform: scale(2);
+	.container:hover & {
+		transform: scale(2);
+	}
 }
 
 .box1 {
 	background: #60D4C8;
 	transition: all 300ms;
 }
-
 
 .box2 {
 	background: #46BAAF;
@@ -42,7 +41,3 @@ h1 {
 	background: #3EA69B;
 	transition: all 3s;
 }
-
-
-
-
