@@ -48,6 +48,22 @@ h1 {
 
 .left_arm { 
 	margin-right: 10px; 
+}
+
+.left_arm:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+} 
+
+.right_arm:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
 } 
 
 .right_arm { 
