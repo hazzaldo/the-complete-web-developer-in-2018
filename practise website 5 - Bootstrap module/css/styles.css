@@ -1,0 +1,17 @@
+/*Note as we're using Bootstrap in our HTML file, btn-danger is actually one of the Bootstrap css classes. So here we're not creating a new class but actually overriding an existing Bootstap class */
+/*
+.btn-danger {
+	background-color: orange;
+}
+
+.btn-danger:hover {
+	background-color: blue;
+}
+
+*/
+
+
+.col-bg {
+	background-color: lightgrey;
+	border: 2px solid black;
+}
